@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar -  A Fazenda 2026</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-fazenda.jpg" alt="Logo A Fazenda" width="50">
+                Votação 2026
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false"
+                    aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                        href="votacao.html">Votar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="resultado.html">Resultado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1 class="text-warning">Quem deve sair?</h1>
+        <p>Escolha um participante da roça para eliminar.</p>
+
+        <div id="mensagem-voto" aria-live="polite"></div>
+
+        <div id="participantes-roca"
+            class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+
+        <section class="mt-5">
+            <h2 class="text-warning">Demais peões</h2>
+
+            <div id="demais-participantes"
+                class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+            </div>
+        </section>
+    </main>
+
+        <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/votacao.js"></script>
+
+</body>
+</html>

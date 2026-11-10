@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado — A Fazenda 2026</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-fazenda.jpg" alt="Logo A Fazenda" width="50">
+                Votação 2026
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false"
+                    aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="votacao.html">Votar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                        href="resultado.html">Resultado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1 class="text-warning">Parcial da eliminação</h1>
+
+        <p id="total-votos">Carregando votos...</p>
+
+        <div id="placar"></div>
+                <button type="button"
+                class="btn btn-outline-light mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-zerar">
+            Zerar votação
+        </button>
+
+        <div class="modal fade" id="modal-zerar" tabindex="-1"
+            aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-dark">
+
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="titulo-modal">
+                            Zerar votação
+                        </h2>
+
+                        <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        Todos os votos serão apagados. Deseja continuar?
+                        <p id="erro-zerar" class="text-danger mt-2"
+                        role="alert"></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Cancelar
+                        </button>
+
+                        <button type="button" class="btn btn-danger"
+                                id="confirmar-zerar">
+                            Sim, apagar votos
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/resultado.js"></script>
+
+</body>
+</html>

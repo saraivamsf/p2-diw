@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação A Fazenda 2026</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-fazenda.jpg" alt="Logo A Fazenda" width="50">
+                Votação 2026
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false"
+                    aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                        href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="votacao.html">Votar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resultado.html">Resultado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-md-4 text-center">
+                <img src="img/fazendeiro.jpg"
+                    alt="Fazendeiro da semana"
+                    class="rounded-circle img-fluid">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h1 class="card-title">Ô DE CASA! AQUI QUEM MANDA É O FAZENDEIRO!</h1>
+
+                        <p class="card-text">
+                            Bem-vindo à votação! Aqui é o pessoal de casa que decide quem volta pra casa e quem fica na roça. Participe e faça sua escolha!
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="votacao.html" class="btn btn-danger">
+                                Votar agora
+                            </a>
+
+                            <a href="resultado.html" class="btn btn-outline-dark">
+                                Ver parcial
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mt-5">
+            <h2 class="text-warning">Quem está na roça?</h2>
+
+            <div id="participantes-roca"
+                class="row row-cols-1 row-cols-md-3 g-4">
+            </div>
+        </section>
+    </main>
+
+        <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/home.js"></script>
+
+</body>
+</html>

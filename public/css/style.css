@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/nunito-400.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Rye";
+    src: url("../fonts/rye.woff2") format("woff2");
+    font-weight: 400;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+    color: #fff3cd;
+    background-color: #654321;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 110px,
+        #3b2514 110px,
+        #3b2514 114px
+    );
+}
+
+.navbar {
+    --bs-dark-rgb: 59, 37, 20;
+    border-bottom: 2px solid #c99a46;
+}
+
+h1,
+h2 {
+    font-family: "Rye", serif;
+    color: #795020;
+}
+
+.card {
+    background-color: #fff3cd;
+    color: #3b2514;
+    border: 2px solid #c99a46;
+}
