@@ -157,41 +157,5 @@
       "naRoca": false
     }
   ],
-  "votos": [
-    {
-      "participanteId": 25,
-      "data": "2026-11-10T12:45:54.225Z",
-      "id": 1
-    },
-    {
-      "participanteId": 25,
-      "data": "2026-11-10T12:45:54.458Z",
-      "id": 2
-    },
-    {
-      "participanteId": 25,
-      "data": "2026-11-10T12:45:54.658Z",
-      "id": 3
-    },
-    {
-      "participanteId": 25,
-      "data": "2026-11-10T12:45:55.791Z",
-      "id": 4
-    },
-    {
-      "participanteId": 11,
-      "data": "2026-11-10T12:45:56.390Z",
-      "id": 5
-    },
-    {
-      "participanteId": 11,
-      "data": "2026-11-10T12:45:56.558Z",
-      "id": 6
-    },
-    {
-      "participanteId": 6,
-      "data": "2026-11-10T12:45:57.341Z",
-      "id": 7
-    }
-  ]
+  "votos": []
 }
