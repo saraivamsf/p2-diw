@@ -44,3 +44,18 @@ h2 {
 .barra-marrom {
     background-color: #795020;
 }
+
+.participante-home {
+    border: 2px solid #b83228;
+    border-radius: 50px;
+    padding: 3px 14px 3px 3px;
+    color: #fff3cd;
+    background-color: #3b2514;
+}
+
+.participante-home img {
+    width: 70px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50px;
+}

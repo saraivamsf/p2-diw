@@ -8,17 +8,12 @@ async function carregarRoca() {
 
         participantes.forEach(function (participante) {
             container.innerHTML += `
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="${participante.foto}" alt="${participante.nome}" class="card-img-top">
+                <div class="col-auto">
+                    <div class="participante-home d-flex align-items-center gap-2">
+                        <img src="${participante.foto}"
+                            alt="${participante.nome}">
 
-                        <div class="card-body">
-                            <h3 class="h5 card-title">
-                                ${participante.nome}
-                            </h3>
-
-                            <span class="badge bg-danger">Na roça</span>
-                        </div>
+                        <span class="fw-bold">${participante.nome}</span>
                     </div>
                 </div>
             `;
