@@ -64,8 +64,8 @@ async function carregarResultado() {
                                      aria-valuenow="${percentual}"
                                      aria-valuemin="0"
                                      aria-valuemax="100">
-                                    <div class="progress-bar bg-danger"
-                                         style="width: ${percentual}%">
+                                    <div class="progress-bar ${lider ? 'bg-danger' : 'barra-marrom'}"
+                                        style="width: ${percentual}%">
                                     </div>
                                 </div>
                             </div>
